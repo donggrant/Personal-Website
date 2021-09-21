@@ -1,0 +1,237 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end reset */
+
+* {
+  box-sizing: border-box;
+  column-width: 8.33%
+} 
+
+[class*="section"] {
+  width: 80%;
+  border: 1px solid white;
+}
+
+.intro section.row1, .intro section.row2 {
+  width: 100%;
+  border: 10px solid white;
+}
+
+.intro section.item {
+  width: 25%;
+  border: 10px solid white;
+} 
+
+@media only screen and (max-width: 768px) {
+  [class*="section"] {
+      width: 80%;
+  }
+    
+} 
+
+body {
+  font-family: Trebuchet MS;
+  background-image: url('turq.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+section.intro {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+section.main{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+section.main section {
+padding: 50px;
+margin: 20px;
+flex: 400px;
+}
+
+.index section.main section {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: lightblue;
+  border-radius: 50% 20% / 10% 40%;
+  padding: 50px;
+  margin: 20px;
+  flex: 400px;
+  text-align: center;
+}
+
+  /* On mouse-over, add a deeper shadow */
+.index section.main section:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  /* Add some padding inside the card container */
+.index section.main h4 {
+    padding: 2px 16px;
+}
+
+ul {list-style-type: circle;}
+
+p, li {
+  color: white;
+  font-size: 20px;
+}
+
+.index section.main p {color:black;}
+
+img {
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 5px;
+  max-width:400px;
+  max-height:400px;
+  width: auto;
+  height: auto;
+  margin: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.index img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 10% / 50%;
+}
+
+h1, h2, h3, h4, h5{
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  margin: 10px;
+}
+
+a h2, header a, {margin: 5px;}
+
+hr {
+  border: none;
+  border-top: 3px solid rgb(89, 163, 182);
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: rgb(102, 102, 102);
+  color: rgb(0, 0, 0);
+}
+
+header a, footer a {
+  background-color:rgb(167, 167, 167);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+h1 {font-size: 45px; margin: 40px}
+h2 {font-size: 40px;}
+h3 {font-size: 35px;}
+h4 {font-size: 30px;}
+h5 {font-size: 25px;}
+
+header nav {
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+footer nav {
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+header {
+  color: white;
+  background-color: rgb(46, 46, 46);
+  padding: 10px;
+}
+
+footer {
+    background-color: rgb(46, 46, 46);
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+
